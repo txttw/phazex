@@ -1,4 +1,4 @@
-# PhazeX — Objective-Driven Conversation Orchestration: Architecture & Developer Guide
+# PhazeX: Architecture & Developer Guide
 
 This document defines the runtime architecture, core components, and developer-facing responsibilities for building, extending, and operating the conversational orchestrator using LangGraph and LangChain.
 

@@ -1,4 +1,4 @@
-# PhaseX — Objective-Driven Conversation Orchestration: Overview
+# PhaseX: Overview
 
 A framework for building reliable, stateful conversational flows with structured information extraction using typed objectives, dependency graphs, and configurable routing rules. Designed for production workflows where correctness, auditability, real-world side effects are first-class design goals.
 
