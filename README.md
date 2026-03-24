@@ -1,6 +1,6 @@
 # PhaseX
 
-A framework for building reliable, stateful conversational flows with structured information extraction, — using typed objectives, validators, dependency graphs — configurable conversation paths with routing rules and safe side-effect execution. Designed for production workflows where correctness, auditability, real-world side effects are first-class design goals.
+A framework for building reliable, stateful conversational agents with structured information extraction, — using typed objectives, validators, dependency graphs — configurable conversation paths with routing rules and safe side-effect execution. Designed for production workflows where correctness, auditability, real-world side effects are first-class design goals.
 
 **The model speaks. The orchestrator manages. The graph governs.**
 
