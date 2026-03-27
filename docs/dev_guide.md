@@ -69,10 +69,10 @@ Scope: a single user turn, across one or more phases.
                        ┌──────────────────────────────────────────────────────────────────────┐
                        ▼                                                                      │
 PreparePhase → ExtractAndGenerate → ApplyTool → Route ── [ same phase ] ──► RespondAndInput ──┘
-     ▲                                  │
-     │                             [ new phase ]
-     │                                  │
-     └──────────────────────────────────┘
+     ▲                                            │
+     │                                      [ new phase ]
+     │                                            │
+     └────────────────────────────────────────────┘
 ```
 
 A single user message can satisfy objectives in the current phase and immediately trigger transition to the next. The orchestrator detects completion at Route, prepares the new phase context, and runs another Extract → Apply → Rpute cycle — all before returning to the user. The user sees exactly one response, always from the correct terminal phase of that turn.

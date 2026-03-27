@@ -167,10 +167,10 @@ The turn loop runs across phases within a single user turn:
                        ┌──────────────────────────────────────────────────────────────────────┐
                        ▼                                                                      │
 PreparePhase → ExtractAndGenerate → ApplyTool → Route ── [ same phase ] ──► RespondAndInput ──┘
-     ▲                                  │
-     │                             [ new phase ]
-     │                                  │
-     └──────────────────────────────────┘
+     ▲                                            │
+     │                                      [ new phase ]
+     │                                            │
+     └────────────────────────────────────────────┘
 ```
 
 A single user message may satisfy objectives in one phase and immediately trigger a transition to the next. The orchestrator detects this, prepares the new phase context, and runs extraction again — all before returning a response to the user. The user always sees exactly one response, always from the correct final phase.
